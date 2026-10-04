@@ -1,0 +1,613 @@
+/* ==========================================================
+   Prolux & co
+   Palette taken from the job photos: zinc, slate, tile red, sky.
+   One recurring shape: the roof pitch (a slanted edge that
+   rises to the right), used on the hero photo and the
+   experience band.
+   ========================================================== */
+
+:root {
+  --slate: #1e2a31;
+  --slate-deep: #151e23;
+  --slate-soft: #2a3a43;
+  --zinc: #dde2e4;
+  --paper: #f1f3f3;
+  --tile: #a8402b;
+  --tile-dark: #8d3422;
+  --sky: #9dc0da;
+  --ink: #1b2327;
+  --muted-on-dark: #aebbc2;
+
+  --focus: #2f6f9f;
+
+  --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+
+  --pitch: clamp(2.5rem, 6vw, 5.5rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  font-stretch: 100%;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.site-header,
+.hero,
+.experience,
+.site-footer,
+.lightbox {
+  --focus: var(--sky);
+}
+
+.wrap {
+  width: min(100% - 2.5rem, 72rem);
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-stretch: 68%;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 50;
+  padding: 0.6rem 1rem;
+  background: #fff;
+  color: var(--slate);
+  font-weight: 700;
+  transition: top 0.15s ease;
+}
+
+.skip:focus {
+  top: 0.75rem;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.4rem;
+  border: 2px solid var(--tile);
+  border-radius: 2px;
+  background: var(--tile);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--tile-dark);
+  border-color: var(--tile-dark);
+}
+
+.btn--quiet {
+  padding: 0.55rem 1rem;
+  border-color: var(--slate);
+  background: transparent;
+  color: var(--slate);
+  font-size: 0.95rem;
+}
+
+.btn--quiet:hover {
+  background: var(--slate);
+  border-color: var(--slate);
+  color: #fff;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--slate);
+  color: #fff;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4rem;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:not(.nav__cta):hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+.nav__cta {
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav__cta:hover {
+  background: #fff;
+  color: var(--slate);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: clamp(34rem, 84svh, 50rem);
+  background: var(--slate);
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero__media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 62%;
+  clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 40% 30%;
+  animation: settle 1.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  width: min(100% - 2.5rem, 72rem);
+  margin-inline: auto;
+  padding-block: 3rem 2rem;
+}
+
+.hero__text {
+  align-self: center;
+  max-width: min(27rem, 38vw);
+  animation: rise 0.9s 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 7.5vw, 6.5rem);
+}
+
+.hero__lead {
+  margin-top: 1.5rem;
+  max-width: 30ch;
+  font-size: 1.2rem;
+  color: #d3dade;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.hero__link {
+  font-weight: 600;
+  text-underline-offset: 0.3em;
+}
+
+.hero__address {
+  font-style: normal;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--muted-on-dark);
+}
+
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Sections ---------- */
+
+.section {
+  padding-block: clamp(4rem, 9vw, 7rem);
+}
+
+.section h2 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+}
+
+/* ---------- Toiture ---------- */
+
+.toiture {
+  background: var(--paper);
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 7fr 4fr;
+  align-items: end;
+  gap: 2.5rem;
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.job--flip {
+  grid-template-columns: 4fr 7fr;
+}
+
+.job--flip .job__photo {
+  order: 2;
+}
+
+.job__photo {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--slate);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.job__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.job__photo:hover img {
+  transform: scale(1.03);
+}
+
+.job__zoom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.4rem 0.8rem;
+  background: var(--slate);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.job__photo:hover .job__zoom,
+.job__photo:focus-visible .job__zoom {
+  opacity: 1;
+}
+
+.job__text {
+  padding-top: 1rem;
+  border-top: 4px solid var(--tile);
+}
+
+.job__text h3 {
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+}
+
+.job__text p {
+  margin-top: 0.75rem;
+  max-width: 28ch;
+}
+
+/* ---------- Experience band ---------- */
+
+.experience {
+  padding-top: calc(var(--pitch) + clamp(2.5rem, 6vw, 4.5rem));
+  padding-bottom: clamp(3.5rem, 8vw, 6rem);
+  background: var(--slate);
+  color: #fff;
+  clip-path: polygon(0 var(--pitch), 100% 0, 100% 100%, 0 100%);
+}
+
+.experience p {
+  max-width: 17ch;
+  font-family: var(--font-display);
+  font-stretch: 62%;
+  font-weight: 800;
+  font-size: clamp(2.6rem, 7.5vw, 6rem);
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+/* ---------- Contact ---------- */
+
+.contact {
+  background: var(--zinc);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2.5rem 4rem;
+  align-items: start;
+}
+
+.contact__name {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.contact__list {
+  margin: 0;
+}
+
+.contact__list > div {
+  padding-block: 1.5rem;
+  border-top: 2px solid var(--slate);
+}
+
+.contact__list > div:last-child {
+  border-bottom: 2px solid var(--slate);
+}
+
+.contact__list dt {
+  font-weight: 700;
+  color: var(--slate-soft);
+}
+
+.contact__list dd {
+  margin: 0.4rem 0 0;
+}
+
+.contact__mail {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  font-stretch: 78%;
+  font-weight: 800;
+  font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+  text-underline-offset: 0.2em;
+}
+
+.contact__status {
+  display: inline-block;
+  margin-left: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.contact address {
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.contact__map {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+  text-underline-offset: 0.25em;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  padding-block: 2rem;
+  background: var(--slate-deep);
+  color: var(--muted-on-dark);
+  font-size: 0.95rem;
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+}
+
+.site-footer a {
+  color: #fff;
+  text-underline-offset: 0.25em;
+}
+
+/* ---------- Lightbox ---------- */
+
+.lightbox {
+  width: min(94vw, 90rem);
+  max-height: 92svh;
+  padding: 0;
+  border: 0;
+  background: var(--slate-deep);
+  color: #fff;
+  overflow: hidden;
+}
+
+.lightbox::backdrop {
+  background: rgba(15, 22, 26, 0.88);
+}
+
+.lightbox figure {
+  margin: 0;
+}
+
+.lightbox img {
+  width: 100%;
+  max-height: 82svh;
+  object-fit: contain;
+}
+
+.lightbox figcaption {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.5rem 0.9rem;
+  border: 0;
+  border-radius: 2px;
+  background: #fff;
+  color: var(--slate);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ---------- Tablet and mobile ---------- */
+
+@media (max-width: 900px) {
+  .hero {
+    display: block;
+    min-height: 0;
+  }
+
+  .hero__media {
+    position: static;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    max-height: 60svh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  .hero__inner {
+    padding-block: 1.5rem 2.5rem;
+  }
+
+  .hero__text {
+    max-width: 32rem;
+  }
+
+  .job,
+  .job--flip {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .job--flip .job__photo {
+    order: 0;
+  }
+
+  .job__text {
+    max-width: 32rem;
+  }
+
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav {
+    gap: 1rem;
+  }
+
+  .brand {
+    font-size: 1.4rem;
+  }
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
