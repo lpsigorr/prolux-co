@@ -12,7 +12,7 @@
   var I18N = {
     fr: {
       title: "Prolux & Co | Travaux de toiture à Zaventem",
-      desc: "Prolux & Co SRL, toiture à Zaventem : construction, rénovation, réparation, dépannage urgent. Plus de 20 ans dans le bâtiment.",
+      desc: "Un problème de toiture\u00a0? Prolux & Co, Zaventem\u00a0: dépannage urgent, réparation, démoussage, corniche, zinguerie, rénovation. Plus de 20 ans dans le bâtiment.",
       skip: "Aller au contenu",
       brand_aria: "Prolux & Co, accueil",
       nav_aria: "Navigation principale",
@@ -24,45 +24,67 @@
       call: "Appeler",
       menu: "Menu",
       menu_close: "Fermer",
-      hero_h1: "Travaux de toiture",
-      hero_lead: "Construction, rénovation, réparation et dépannage urgent.",
-      hero_cta2: "Voir nos services",
+      hero_h1a: "Un problème de toiture\u00a0?",
+      hero_h1b: "On s’en occupe.",
+      hero_lead: "Fuite, mousse, corniche, zinc, rénovation\u00a0: trouvez votre solution en quelques secondes.",
+      hero_find: "Choisir mon problème",
+      hero_trust: "Plus de 20 ans dans le bâtiment",
       alt_hero: "Un couvreur sur une échelle posée contre une toiture en tuiles rouges, au niveau du faîte, avec une lance de lavage",
-      services_title: "Services",
-      s1: "Construction, rénovation et réparation",
-      s2: "Toitures plates, inclinées, écologiques et végétales",
-      s2_note: "En tuiles et en ardoises",
-      s3: "Roofing et zinguerie",
-      s4: "Corniche",
-      s5: "Lavage et démoussage",
-      s6: "Dépannage urgent",
+      services_kicker: "Services",
+      picker_title: "Quel est votre souci\u00a0?",
+      picker_hint: "Cliquez sur votre cas, la solution s’affiche aussitôt.",
+      urgent_label: "Appelez-nous maintenant",
+      c1_tab: "Fuite, dégâts, urgence",
+      c1_svc: "Dépannage urgent",
+      c1_text: "Une fuite, des tuiles arrachées par une tempête\u00a0: ne laissez pas l’eau s’installer. Appelez-nous, nous intervenons en urgence.",
+      c2_tab: "Mousse, toit sale",
+      c2_svc: "Lavage et démoussage",
+      c2_text: "La mousse et les salissures retiennent l’humidité et abîment les tuiles. Nous lavons et démoussons votre toiture pour lui redonner tout son éclat.",
+      c3_tab: "Tuiles cassées, toit abîmé",
+      c3_svc: "Réparation de toiture",
+      c3_text: "Tuiles cassées ou déplacées, toit fatigué par le temps ou la météo\u00a0: nous réparons avant que le problème ne s’aggrave.",
+      c4_tab: "Corniche abîmée",
+      c4_svc: "Corniche",
+      c4_text: "Une corniche abîmée laisse l’eau s’infiltrer. Nous réalisons vos travaux de corniche avec une finition soignée.",
+      c5_tab: "Gouttière, zinc, toit plat",
+      c5_svc: "Roofing et zinguerie",
+      c5_text: "Gouttière ou chéneau qui fuit, zinc abîmé, toit plat qui prend l’eau\u00a0: nous faisons le roofing et la zinguerie pour garder votre toit étanche.",
+      c6_tab: "Rénover ou construire un toit",
+      c6_svc: "Construction et rénovation",
+      c6_text: "Un toit entier à refaire ou à construire\u00a0? Plat, incliné, écologique ou végétal, en tuiles ou en ardoises\u00a0: nous le construisons et le rénovons.",
       work_title: "Nos travaux",
       g1: "Lavage et démoussage",
       g2: "Corniche et zinguerie",
-      video_aria: "Vidéo d'un chantier de lavage de toiture",
+      video_aria: "Vidéo d’un chantier de lavage de toiture",
       video_pause: "Mettre en pause",
       video_play: "Lire la vidéo",
       cap_wash: "Lavage de toiture",
       cap_cornice: "Corniche",
       cap_zinc: "Zinguerie",
       cap_cornice_zinc: "Corniche et zinguerie",
-      alt_cheminee: "Un couvreur lave une toiture en tuiles depuis une échelle, à côté d'une cheminée en briques",
-      alt_fenetres: "Lavage d'une toiture en tuiles autour de deux fenêtres de toit, la partie lavée est plus claire",
+      alt_cheminee: "Un couvreur lave une toiture en tuiles depuis une échelle, à côté d’une cheminée en briques",
+      alt_fenetres: "Lavage d’une toiture en tuiles autour de deux fenêtres de toit, la partie lavée est plus claire",
       alt_corniche: "Corniche sur un mur en briques rouges, avec une finition métallique sur le dessus",
       alt_zinc_roof: "Bord de toiture en tuiles noires avec finition en zinc et chéneau",
-      alt_zinc_gutter: "Chéneau en zinc le long d'une toiture en tuiles noires, vu d'en haut",
+      alt_zinc_gutter: "Chéneau en zinc le long d’une toiture en tuiles noires, vu d’en haut",
+      alt_ridge: "Un couvreur assis sur le faîte d’une toiture en tuiles, avec une échelle posée à côté de lui",
       about_pill: "Qui sommes-nous",
-      about_a: "Plus de 20 ans dans le",
-      about_b: "bâtiment.",
-      about_text: "Une toiture à construire, rénover, réparer ou nettoyer\u00a0? Dites-nous ce qu'il vous faut, nous nous en occupons.",
+      about_h2: "Plus de 20 ans dans le bâtiment.",
+      about_text: "Une toiture à construire, rénover, réparer ou nettoyer\u00a0? Dites-nous ce qu’il vous faut, nous nous en occupons.",
+      p1_title: "Toutes les toitures",
+      p1_text: "Plates, inclinées, écologiques, végétales, en tuiles ou en ardoises.",
+      p2_title: "Quand c’est urgent",
+      p2_text: "Un dépannage urgent pour les fuites qui ne peuvent pas attendre.",
+      p3_title: "Dans votre langue",
+      p3_text: "Nous vous répondons en français, en néerlandais ou en anglais.",
       write_us: "Nous écrire",
       contact_title: "Contact",
-      label_phone: "Téléphone",
+      contact_lead: "Parlez-nous de votre toit\u00a0: appelez ou écrivez-nous.",
       label_email: "E-mail",
       label_address: "Adresse",
-      copy_btn: "Copier l'adresse",
+      copy_btn: "Copier l’adresse",
       copied: "Adresse copiée",
-      copy_failed: "Copie impossible. Sélectionnez l'adresse à la main.",
+      copy_failed: "Copie impossible. Sélectionnez l’adresse à la main.",
       lb_aria: "Photo agrandie",
       lb_prev: "Précédente",
       lb_next: "Suivante",
@@ -70,7 +92,7 @@
     },
     nl: {
       title: "Prolux & Co | Dakwerken in Zaventem",
-      desc: "Prolux & Co SRL, dakwerken in Zaventem: bouw, renovatie, herstelling en spoeddienst. Meer dan 20 jaar in de bouw.",
+      desc: "Een probleem met uw dak? Prolux & Co, Zaventem: spoeddienst, herstelling, ontmossing, kroonlijst, zinkwerk, renovatie. Meer dan 20 jaar in de bouw.",
       skip: "Ga naar de inhoud",
       brand_aria: "Prolux & Co, startpagina",
       nav_aria: "Hoofdmenu",
@@ -82,18 +104,34 @@
       call: "Bellen",
       menu: "Menu",
       menu_close: "Sluiten",
-      hero_h1: "Dakwerken",
-      hero_lead: "Bouw, renovatie, herstelling en spoeddienst.",
-      hero_cta2: "Bekijk onze diensten",
+      hero_h1a: "Een probleem met uw dak?",
+      hero_h1b: "Wij regelen het.",
+      hero_lead: "Lek, mos, kroonlijst, zink, renovatie: vind uw oplossing in enkele seconden.",
+      hero_find: "Kies mijn probleem",
+      hero_trust: "Meer dan 20 jaar in de bouw",
       alt_hero: "Een dakwerker op een ladder tegen een dak met rode dakpannen, ter hoogte van de nok, met een reinigingslans",
-      services_title: "Diensten",
-      s1: "Bouw, renovatie en herstelling",
-      s2: "Platte daken, hellende daken, ecologische daken en groendaken",
-      s2_note: "Met dakpannen en leien",
-      s3: "Roofing en zinkwerk",
-      s4: "Kroonlijst",
-      s5: "Reiniging en ontmossing",
-      s6: "Spoeddienst",
+      services_kicker: "Diensten",
+      picker_title: "Wat is het probleem?",
+      picker_hint: "Klik op uw situatie, de oplossing verschijnt meteen.",
+      urgent_label: "Bel ons nu",
+      c1_tab: "Lek, schade, spoed",
+      c1_svc: "Spoeddienst",
+      c1_text: "Een lek, dakpannen die door een storm zijn weggewaaid: laat het water niet binnendringen. Bel ons, wij komen dringend ter plaatse.",
+      c2_tab: "Mos, vuil dak",
+      c2_svc: "Reiniging en ontmossing",
+      c2_text: "Mos en vuil houden vocht vast en beschadigen de dakpannen. Wij reinigen en ontmossen uw dak, zodat het er weer als nieuw uitziet.",
+      c3_tab: "Gebroken pannen, beschadigd dak",
+      c3_svc: "Dakherstelling",
+      c3_text: "Gebroken of verschoven dakpannen, een dak dat geleden heeft onder de tijd of het weer: wij herstellen het voordat het probleem erger wordt.",
+      c4_tab: "Beschadigde kroonlijst",
+      c4_svc: "Kroonlijst",
+      c4_text: "Een beschadigde kroonlijst laat water binnendringen. Wij voeren uw kroonlijstwerken uit met een verzorgde afwerking.",
+      c5_tab: "Goot, zink, plat dak",
+      c5_svc: "Roofing en zinkwerk",
+      c5_text: "Een lekkende goot, beschadigd zink, een plat dak dat water doorlaat: wij doen het roofing- en zinkwerk om uw dak waterdicht te houden.",
+      c6_tab: "Een dak renoveren of bouwen",
+      c6_svc: "Bouw en renovatie",
+      c6_text: "Een volledig dak om te vernieuwen of te bouwen? Plat, hellend, ecologisch of groen, met dakpannen of leien: wij bouwen en renoveren het.",
       work_title: "Ons werk",
       g1: "Reiniging en ontmossing",
       g2: "Kroonlijst en zinkwerk",
@@ -109,13 +147,19 @@
       alt_corniche: "Kroonlijst op een muur van rode bakstenen, met een metalen afwerking bovenaan",
       alt_zinc_roof: "Dakrand met zwarte dakpannen, zinken afwerking en goot",
       alt_zinc_gutter: "Zinken goot langs een dak met zwarte dakpannen, van bovenaf gezien",
+      alt_ridge: "Een dakwerker zit op de nok van een dak met dakpannen, met een ladder naast zich",
       about_pill: "Wie zijn wij",
-      about_a: "Meer dan 20 jaar in de",
-      about_b: "bouw.",
+      about_h2: "Meer dan 20 jaar in de bouw.",
       about_text: "Een dak om te bouwen, te renoveren, te herstellen of te reinigen? Zeg ons wat u nodig hebt, wij regelen het.",
+      p1_title: "Alle daken",
+      p1_text: "Plat, hellend, ecologisch, groen, met dakpannen of leien.",
+      p2_title: "Als het dringend is",
+      p2_text: "Een spoeddienst voor lekken die niet kunnen wachten.",
+      p3_title: "In uw taal",
+      p3_text: "Wij antwoorden u in het Frans, Nederlands of Engels.",
       write_us: "Mail ons",
       contact_title: "Contact",
-      label_phone: "Telefoon",
+      contact_lead: "Vertel ons over uw dak: bel of mail ons.",
       label_email: "E-mail",
       label_address: "Adres",
       copy_btn: "E-mailadres kopiëren",
@@ -128,7 +172,7 @@
     },
     en: {
       title: "Prolux & Co | Roofing work in Zaventem",
-      desc: "Prolux & Co SRL, roofing in Zaventem: construction, renovation, repair and emergency service. Over 20 years in construction.",
+      desc: "A problem with your roof? Prolux & Co, Zaventem: emergency service, repair, moss removal, cornice, zinc work, renovation. Over 20 years in construction.",
       skip: "Skip to content",
       brand_aria: "Prolux & Co, home",
       nav_aria: "Main navigation",
@@ -140,18 +184,34 @@
       call: "Call",
       menu: "Menu",
       menu_close: "Close",
-      hero_h1: "Roofing work",
-      hero_lead: "Construction, renovation, repair and emergency service.",
-      hero_cta2: "See our services",
+      hero_h1a: "A problem with your roof?",
+      hero_h1b: "We’ll deal with it.",
+      hero_lead: "Leak, moss, cornice, zinc, renovation: find your solution in seconds.",
+      hero_find: "Pick my problem",
+      hero_trust: "Over 20 years in construction",
       alt_hero: "A roofer on a ladder against a red tile roof, at the ridge, holding a pressure washer lance",
-      services_title: "Services",
-      s1: "Construction, renovation and repair",
-      s2: "Flat, pitched, ecological and green roofs",
-      s2_note: "In tiles and slate",
-      s3: "Roofing and zinc work",
-      s4: "Cornice",
-      s5: "Washing and moss removal",
-      s6: "Emergency service",
+      services_kicker: "Services",
+      picker_title: "What’s the issue?",
+      picker_hint: "Pick your case and the solution appears right away.",
+      urgent_label: "Call us now",
+      c1_tab: "Leak, damage, emergency",
+      c1_svc: "Emergency service",
+      c1_text: "A leak, tiles torn off by a storm: don’t let the water settle in. Call us, we step in urgently.",
+      c2_tab: "Moss, dirty roof",
+      c2_svc: "Washing and moss removal",
+      c2_text: "Moss and grime hold moisture and wear down the tiles. We wash and de-moss your roof so it looks its best again.",
+      c3_tab: "Broken tiles, damaged roof",
+      c3_svc: "Roof repair",
+      c3_text: "Broken or slipped tiles, a roof worn by time or weather: we repair it before the problem gets worse.",
+      c4_tab: "Damaged cornice",
+      c4_svc: "Cornice",
+      c4_text: "A damaged cornice lets water in. We carry out your cornice work with a careful finish.",
+      c5_tab: "Gutter, zinc, flat roof",
+      c5_svc: "Roofing and zinc work",
+      c5_text: "A leaking gutter, damaged zinc, a flat roof taking on water: we handle roofing and zinc work to keep your roof watertight.",
+      c6_tab: "Renovate or build a roof",
+      c6_svc: "Construction and renovation",
+      c6_text: "A whole roof to redo or build? Flat, pitched, ecological or green, in tiles or slate: we build and renovate it.",
       work_title: "Our work",
       g1: "Washing and moss removal",
       g2: "Cornice and zinc work",
@@ -167,18 +227,24 @@
       alt_corniche: "Cornice on a red brick wall, with a metal finish on top",
       alt_zinc_roof: "Edge of a black tile roof with zinc finish and gutter",
       alt_zinc_gutter: "Zinc gutter along a black tile roof, seen from above",
+      alt_ridge: "A roofer sitting on the ridge of a tile roof, with a ladder beside him",
       about_pill: "Who we are",
-      about_a: "Over 20 years in",
-      about_b: "construction.",
-      about_text: "A roof to build, renovate, repair or clean? Tell us what you need and we'll take care of it.",
+      about_h2: "Over 20 years in construction.",
+      about_text: "A roof to build, renovate, repair or clean? Tell us what you need and we’ll take care of it.",
+      p1_title: "Every kind of roof",
+      p1_text: "Flat, pitched, ecological, green, in tiles or slate.",
+      p2_title: "When it’s urgent",
+      p2_text: "Emergency service for leaks that can’t wait.",
+      p3_title: "In your language",
+      p3_text: "We answer in French, Dutch or English.",
       write_us: "Email us",
       contact_title: "Contact",
-      label_phone: "Phone",
+      contact_lead: "Tell us about your roof: call or email us.",
       label_email: "Email",
       label_address: "Address",
       copy_btn: "Copy email address",
       copied: "Address copied",
-      copy_failed: "Couldn't copy. Please select the address by hand.",
+      copy_failed: "Couldn’t copy. Please select the address by hand.",
       lb_aria: "Enlarged photo",
       lb_prev: "Previous",
       lb_next: "Next",
@@ -285,6 +351,49 @@
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  /* ==========================================================
+     "What's the issue?" : the visitor picks a case and sees the
+     solution. One case is always open. On wide screens the list
+     sits next to the answer, on phones the answer opens under
+     the case that was tapped.
+     ========================================================== */
+
+  var caseButtons = Array.prototype.slice.call(document.querySelectorAll('.case__button'));
+
+  function openCase(button, scrollToIt) {
+    caseButtons.forEach(function (other) {
+      var isOpen = other === button;
+      var panel = document.getElementById(other.getAttribute('aria-controls'));
+      other.setAttribute('aria-expanded', String(isOpen));
+      other.closest('.case').classList.toggle('is-active', isOpen);
+      if (panel) panel.hidden = !isOpen;
+    });
+
+    if (scrollToIt && window.matchMedia('(max-width: 900px)').matches) {
+      /* the list reflows when another case closes: keep the tapped one in view */
+      var top = button.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: top });
+    }
+  }
+
+  caseButtons.forEach(function (button, index) {
+    button.addEventListener('click', function () {
+      openCase(button, true);
+    });
+
+    button.addEventListener('keydown', function (event) {
+      var target = null;
+      if (event.key === 'ArrowDown') target = caseButtons[(index + 1) % caseButtons.length];
+      if (event.key === 'ArrowUp') target = caseButtons[(index - 1 + caseButtons.length) % caseButtons.length];
+      if (event.key === 'Home') target = caseButtons[0];
+      if (event.key === 'End') target = caseButtons[caseButtons.length - 1];
+      if (target) {
+        event.preventDefault();
+        target.focus();
+      }
+    });
+  });
 
   /* ==========================================================
      Photo lightbox with previous / next

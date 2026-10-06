@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prolux &amp; Co | Travaux de toiture à Zaventem</title>
-  <meta name="description" content="Prolux &amp; Co SRL, toiture à Zaventem : construction, rénovation, réparation, dépannage urgent. Plus de 20 ans dans le bâtiment.">
-  <meta name="theme-color" content="#fffffa">
+  <title>Prolux &amp; Co | Travaux de toiture</title>
+  <meta name="description" content="Un problème de toiture ? Prolux &amp; Co, Zaventem : dépannage urgent, réparation, démoussage, corniche, zinguerie, rénovation. Plus de 20 ans dans le bâtiment.">
+  <meta name="theme-color" content="#0f0047">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Prolux &amp; Co | Travaux de toiture">
-  <meta property="og:description" content="Construction, rénovation, réparation et dépannage urgent. Plus de 20 ans dans le bâtiment.">
+  <meta property="og:description" content="Un problème de toiture ? Dépannage urgent, réparation, démoussage, corniche, zinguerie, rénovation. Plus de 20 ans dans le bâtiment.">
   <meta property="og:locale" content="fr_BE">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/manrope-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/archivo-latin-wdth.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 
   <script type="application/ld+json">
@@ -59,7 +59,7 @@
           <button type="button" data-lang="nl" lang="nl" aria-label="Nederlands" aria-pressed="false">NL</button>
           <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
         </div>
-        <a class="btn btn--small" href="tel:+32488409068">
+        <a class="btn btn--orange btn--small" href="tel:+32488409068">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span class="call__number">+32 488 40 90 68</span>
           <span class="call__label" data-i18n="call">Appeler</span>
@@ -74,17 +74,22 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap">
         <div class="hero__text">
-          <h1 id="hero-title" data-i18n="hero_h1">Travaux de toiture</h1>
-          <p class="hero__lead" data-i18n="hero_lead">Construction, rénovation, réparation et dépannage urgent.</p>
+          <h1 id="hero-title"><span data-i18n="hero_h1a">Un problème de toiture&nbsp;?</span> <span class="hero__accent" data-i18n="hero_h1b">On s’en occupe.</span></h1>
+          <p class="hero__lead" data-i18n="hero_lead">Fuite, mousse, corniche, zinc, rénovation : trouvez votre solution en quelques secondes.</p>
           <div class="hero__actions">
-            <a class="btn" href="tel:+32488409068">
+            <a class="btn btn--orange btn--large" href="tel:+32488409068">
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               <span data-i18n="call">Appeler</span>
+              <span class="btn__num">+32 488 40 90 68</span>
             </a>
-            <a class="btn btn--ghost" href="#services" data-i18n="hero_cta2">Voir nos services</a>
+            <a class="btn btn--line btn--large" href="#services" data-i18n="hero_find">Choisir mon problème</a>
           </div>
+          <p class="hero__trust"><span class="hero__trust-bar" aria-hidden="true"></span><span data-i18n="hero_trust">Plus de 20 ans dans le bâtiment</span></p>
         </div>
+      </div>
 
+      <div class="hero__media">
+        <div class="hero__stripe" aria-hidden="true"></div>
         <div class="hero__photo">
           <img
             src="assets/img/lavage-echelle.jpg"
@@ -98,66 +103,191 @@
 
     <section class="section services" id="services" aria-labelledby="services-title">
       <div class="wrap">
-        <h2 class="section__title" id="services-title" data-i18n="services_title">Services</h2>
+        <div class="services__head">
+          <div>
+            <p class="kicker" data-i18n="services_kicker">Services</p>
+            <h2 class="section__title" id="services-title" data-i18n="picker_title">Quel est votre souci&nbsp;?</h2>
+          </div>
+          <p class="services__hint" data-i18n="picker_hint">Cliquez sur votre cas, la solution s’affiche aussitôt.</p>
+        </div>
 
-        <ul class="service-list">
-          <li class="service">
-            <span class="service__icon">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            </span>
-            <div class="service__body">
-              <p class="service__name" data-i18n="s1">Construction, rénovation et réparation</p>
+        <div class="cases" data-cases>
+        <div class="case is-active">
+          <h3 class="case__heading">
+            <button class="case__button" type="button" id="case-1-btn" aria-expanded="true" aria-controls="case-1">
+              <span class="case__num" aria-hidden="true">01</span>
+              <span class="case__text">
+                <span class="case__label" data-i18n="c1_tab">Fuite, dégâts, urgence</span>
+                <span class="case__service" data-i18n="c1_svc">Dépannage urgent</span>
+              </span>
+            </button>
+          </h3>
+          <div class="case__panel" id="case-1" role="region" aria-labelledby="case-1-btn">
+          <div class="case__media case__media--call">
+            <p class="case__call-label" data-i18n="urgent_label">Appelez-nous maintenant</p>
+            <a class="case__call-number" href="tel:+32488409068">+32 488 40 90 68</a>
+          </div>
+            <div class="case__body">
+              <h4 class="case__title" data-i18n="c1_svc">Dépannage urgent</h4>
+              <p class="case__desc" data-i18n="c1_text">Une fuite, des tuiles arrachées par une tempête : ne laissez pas l’eau s’installer. Appelez-nous, nous intervenons en urgence.</p>
+              <div class="case__actions">
+                <a class="btn btn--orange" href="tel:+32488409068">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span data-i18n="call">Appeler</span>
+                  <span class="btn__num">+32 488 40 90 68</span>
+                </a>
+                <a class="btn btn--line" href="mailto:proluxsrl@hotmail.com" data-i18n="write_us">Nous écrire</a>
+              </div>
             </div>
-          </li>
+          </div>
+        </div>
 
-          <li class="service">
-            <span class="service__icon">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12 12 4l9 8"/><path d="M6 10v10h12V10"/></svg>
-            </span>
-            <div class="service__body">
-              <p class="service__name" data-i18n="s2">Toitures plates, inclinées, écologiques et végétales</p>
-              <p class="service__note" data-i18n="s2_note">En tuiles et en ardoises</p>
+        <div class="case">
+          <h3 class="case__heading">
+            <button class="case__button" type="button" id="case-2-btn" aria-expanded="false" aria-controls="case-2">
+              <span class="case__num" aria-hidden="true">02</span>
+              <span class="case__text">
+                <span class="case__label" data-i18n="c2_tab">Mousse, toit sale</span>
+                <span class="case__service" data-i18n="c2_svc">Lavage et démoussage</span>
+              </span>
+            </button>
+          </h3>
+          <div class="case__panel" id="case-2" role="region" aria-labelledby="case-2-btn" hidden>
+          <div class="case__media">
+            <img src="assets/img/lavage-fenetres-toit.jpg" alt="Lavage d&#x27;une toiture en tuiles autour de deux fenêtres de toit, la partie lavée est plus claire" data-i18n-attrs="alt:alt_fenetres" width="1800" height="1012" loading="lazy" style="--pos: 30% 40%">
+          </div>
+            <div class="case__body">
+              <h4 class="case__title" data-i18n="c2_svc">Lavage et démoussage</h4>
+              <p class="case__desc" data-i18n="c2_text">La mousse et les salissures retiennent l’humidité et abîment les tuiles. Nous lavons et démoussons votre toiture pour lui redonner tout son éclat.</p>
+              <div class="case__actions">
+                <a class="btn btn--orange" href="tel:+32488409068">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span data-i18n="call">Appeler</span>
+                  <span class="btn__num">+32 488 40 90 68</span>
+                </a>
+                <a class="btn btn--line" href="mailto:proluxsrl@hotmail.com" data-i18n="write_us">Nous écrire</a>
+              </div>
             </div>
-          </li>
+          </div>
+        </div>
 
-          <li class="service">
-            <span class="service__icon">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
-            </span>
-            <div class="service__body">
-              <p class="service__name" data-i18n="s3">Roofing et zinguerie</p>
+        <div class="case">
+          <h3 class="case__heading">
+            <button class="case__button" type="button" id="case-3-btn" aria-expanded="false" aria-controls="case-3">
+              <span class="case__num" aria-hidden="true">03</span>
+              <span class="case__text">
+                <span class="case__label" data-i18n="c3_tab">Tuiles cassées, toit abîmé</span>
+                <span class="case__service" data-i18n="c3_svc">Réparation de toiture</span>
+              </span>
+            </button>
+          </h3>
+          <div class="case__panel" id="case-3" role="region" aria-labelledby="case-3-btn" hidden>
+          <div class="case__media">
+            <img src="assets/img/lavage-cheminee.jpg" alt="Un couvreur lave une toiture en tuiles depuis une échelle, à côté d&#x27;une cheminée en briques" data-i18n-attrs="alt:alt_cheminee" width="1800" height="1012" loading="lazy" style="--pos: 38% 50%">
+          </div>
+            <div class="case__body">
+              <h4 class="case__title" data-i18n="c3_svc">Réparation de toiture</h4>
+              <p class="case__desc" data-i18n="c3_text">Tuiles cassées ou déplacées, toit fatigué par le temps ou la météo : nous réparons avant que le problème ne s’aggrave.</p>
+              <div class="case__actions">
+                <a class="btn btn--orange" href="tel:+32488409068">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span data-i18n="call">Appeler</span>
+                  <span class="btn__num">+32 488 40 90 68</span>
+                </a>
+                <a class="btn btn--line" href="mailto:proluxsrl@hotmail.com" data-i18n="write_us">Nous écrire</a>
+              </div>
             </div>
-          </li>
+          </div>
+        </div>
 
-          <li class="service">
-            <span class="service__icon">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9 12 4l9 5"/><path d="M5 9h14"/><path d="M7 9v11"/><path d="M17 9v11"/></svg>
-            </span>
-            <div class="service__body">
-              <p class="service__name" data-i18n="s4">Corniche</p>
+        <div class="case">
+          <h3 class="case__heading">
+            <button class="case__button" type="button" id="case-4-btn" aria-expanded="false" aria-controls="case-4">
+              <span class="case__num" aria-hidden="true">04</span>
+              <span class="case__text">
+                <span class="case__label" data-i18n="c4_tab">Corniche abîmée</span>
+                <span class="case__service" data-i18n="c4_svc">Corniche</span>
+              </span>
+            </button>
+          </h3>
+          <div class="case__panel" id="case-4" role="region" aria-labelledby="case-4-btn" hidden>
+          <div class="case__media">
+            <img src="assets/img/corniche.jpg" alt="Corniche sur un mur en briques rouges, avec une finition métallique sur le dessus" data-i18n-attrs="alt:alt_corniche" width="1800" height="1012" loading="lazy" style="--pos: 40% 50%">
+          </div>
+            <div class="case__body">
+              <h4 class="case__title" data-i18n="c4_svc">Corniche</h4>
+              <p class="case__desc" data-i18n="c4_text">Une corniche abîmée laisse l’eau s’infiltrer. Nous réalisons vos travaux de corniche avec une finition soignée.</p>
+              <div class="case__actions">
+                <a class="btn btn--orange" href="tel:+32488409068">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span data-i18n="call">Appeler</span>
+                  <span class="btn__num">+32 488 40 90 68</span>
+                </a>
+                <a class="btn btn--line" href="mailto:proluxsrl@hotmail.com" data-i18n="write_us">Nous écrire</a>
+              </div>
             </div>
-          </li>
+          </div>
+        </div>
 
-          <li class="service">
-            <span class="service__icon">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
-            </span>
-            <div class="service__body">
-              <p class="service__name" data-i18n="s5">Lavage et démoussage</p>
+        <div class="case">
+          <h3 class="case__heading">
+            <button class="case__button" type="button" id="case-5-btn" aria-expanded="false" aria-controls="case-5">
+              <span class="case__num" aria-hidden="true">05</span>
+              <span class="case__text">
+                <span class="case__label" data-i18n="c5_tab">Gouttière, zinc, toit plat</span>
+                <span class="case__service" data-i18n="c5_svc">Roofing et zinguerie</span>
+              </span>
+            </button>
+          </h3>
+          <div class="case__panel" id="case-5" role="region" aria-labelledby="case-5-btn" hidden>
+          <div class="case__media">
+            <img src="assets/img/zinguerie-toit.jpg" alt="Bord de toiture en tuiles noires avec finition en zinc et chéneau" data-i18n-attrs="alt:alt_zinc_roof" width="1800" height="1012" loading="lazy" style="--pos: 40% 50%">
+          </div>
+            <div class="case__body">
+              <h4 class="case__title" data-i18n="c5_svc">Roofing et zinguerie</h4>
+              <p class="case__desc" data-i18n="c5_text">Gouttière ou chéneau qui fuit, zinc abîmé, toit plat qui prend l’eau : nous faisons le roofing et la zinguerie pour garder votre toit étanche.</p>
+              <div class="case__actions">
+                <a class="btn btn--orange" href="tel:+32488409068">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span data-i18n="call">Appeler</span>
+                  <span class="btn__num">+32 488 40 90 68</span>
+                </a>
+                <a class="btn btn--line" href="mailto:proluxsrl@hotmail.com" data-i18n="write_us">Nous écrire</a>
+              </div>
             </div>
-          </li>
+          </div>
+        </div>
 
-          <li class="service service--urgent">
-            <span class="service__icon">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
-            </span>
-            <div class="service__body">
-              <p class="service__name" data-i18n="s6">Dépannage urgent</p>
-              <p class="service__note">+32 488 40 90 68</p>
-              <a class="btn btn--light btn--small" href="tel:+32488409068" data-i18n="call">Appeler</a>
+        <div class="case">
+          <h3 class="case__heading">
+            <button class="case__button" type="button" id="case-6-btn" aria-expanded="false" aria-controls="case-6">
+              <span class="case__num" aria-hidden="true">06</span>
+              <span class="case__text">
+                <span class="case__label" data-i18n="c6_tab">Rénover ou construire un toit</span>
+                <span class="case__service" data-i18n="c6_svc">Construction et rénovation</span>
+              </span>
+            </button>
+          </h3>
+          <div class="case__panel" id="case-6" role="region" aria-labelledby="case-6-btn" hidden>
+          <div class="case__media">
+            <img src="assets/img/lavage-echelle.jpg" alt="Un couvreur sur une échelle posée contre une toiture en tuiles rouges, au niveau du faîte, avec une lance de lavage" data-i18n-attrs="alt:alt_hero" width="2000" height="1125" loading="lazy" style="--pos: 45% 70%">
+          </div>
+            <div class="case__body">
+              <h4 class="case__title" data-i18n="c6_svc">Construction et rénovation</h4>
+              <p class="case__desc" data-i18n="c6_text">Un toit entier à refaire ou à construire ? Plat, incliné, écologique ou végétal, en tuiles ou en ardoises : nous le construisons et le rénovons.</p>
+              <div class="case__actions">
+                <a class="btn btn--orange" href="tel:+32488409068">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span data-i18n="call">Appeler</span>
+                  <span class="btn__num">+32 488 40 90 68</span>
+                </a>
+                <a class="btn btn--line" href="mailto:proluxsrl@hotmail.com" data-i18n="write_us">Nous écrire</a>
+              </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
+
+        </div>
       </div>
     </section>
 
@@ -172,7 +302,7 @@
               <video
                 muted loop playsinline preload="metadata"
                 poster="assets/video/chantier-poster.jpg"
-                aria-label="Vidéo d'un chantier de lavage de toiture"
+                aria-label="Vidéo d&#x27;un chantier de lavage de toiture"
                 data-i18n-attrs="aria-label:video_aria">
                 <source src="assets/video/chantier.mp4" type="video/mp4">
               </video>
@@ -182,14 +312,14 @@
             <button class="tile shot" type="button" data-lightbox data-caption="Lavage de toiture" data-i18n-attrs="data-caption:cap_wash" style="--pos: 38% 50%">
               <img
                 src="assets/img/lavage-cheminee.jpg"
-                alt="Un couvreur lave une toiture en tuiles depuis une échelle, à côté d'une cheminée en briques"
+                alt="Un couvreur lave une toiture en tuiles depuis une échelle, à côté d&#x27;une cheminée en briques"
                 data-i18n-attrs="alt:alt_cheminee"
                 width="1800" height="1012" loading="lazy">
             </button>
             <button class="tile shot" type="button" data-lightbox data-caption="Lavage de toiture" data-i18n-attrs="data-caption:cap_wash" style="--pos: 30% 40%">
               <img
                 src="assets/img/lavage-fenetres-toit.jpg"
-                alt="Lavage d'une toiture en tuiles autour de deux fenêtres de toit, la partie lavée est plus claire"
+                alt="Lavage d&#x27;une toiture en tuiles autour de deux fenêtres de toit, la partie lavée est plus claire"
                 data-i18n-attrs="alt:alt_fenetres"
                 width="1800" height="1012" loading="lazy">
             </button>
@@ -216,7 +346,7 @@
             <button class="tile shot" type="button" data-lightbox data-caption="Corniche et zinguerie" data-i18n-attrs="data-caption:cap_cornice_zinc" style="--pos: 50% 50%">
               <img
                 src="assets/img/zinguerie-chenal.jpg"
-                alt="Chéneau en zinc le long d'une toiture en tuiles noires, vu d'en haut"
+                alt="Chéneau en zinc le long d&#x27;une toiture en tuiles noires, vu d&#x27;en haut"
                 data-i18n-attrs="alt:alt_zinc_gutter"
                 width="1000" height="1778" loading="lazy">
             </button>
@@ -225,50 +355,78 @@
       </div>
     </section>
 
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="wrap about__inner">
-        <p class="pill" data-i18n="about_pill">Qui sommes-nous</p>
-        <h2 id="about-title"><span data-i18n="about_a">Plus de 20 ans dans le</span> <span data-i18n="about_b">bâtiment.</span></h2>
-        <p class="about__text" data-i18n="about_text">Une toiture à construire, rénover, réparer ou nettoyer&nbsp;? Dites-nous ce qu'il vous faut, nous nous en occupons.</p>
-        <div class="about__actions">
-          <a class="btn" href="tel:+32488409068">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span data-i18n="call">Appeler</span>
-          </a>
-          <a class="btn btn--ghost" href="mailto:proluxsrl@hotmail.com" data-i18n="write_us">Nous écrire</a>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="about__grid">
+          <div class="about__text">
+            <p class="kicker kicker--light" data-i18n="about_pill">Qui sommes-nous</p>
+            <h2 id="about-title" data-i18n="about_h2">Plus de 20 ans dans le bâtiment.</h2>
+            <p class="about__lead" data-i18n="about_text">Une toiture à construire, rénover, réparer ou nettoyer&nbsp;? Dites-nous ce qu’il vous faut, nous nous en occupons.</p>
+            <div class="about__actions">
+              <a class="btn btn--orange" href="tel:+32488409068">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span data-i18n="call">Appeler</span>
+                <span class="btn__num">+32 488 40 90 68</span>
+              </a>
+              <a class="btn btn--line" href="mailto:proluxsrl@hotmail.com" data-i18n="write_us">Nous écrire</a>
+            </div>
+          </div>
+          <div class="about__photo">
+            <img
+              src="assets/img/sur-le-toit.jpg"
+              alt="Un couvreur assis sur le faîte d&#x27;une toiture en tuiles, avec une échelle posée à côté de lui"
+              data-i18n-attrs="alt:alt_ridge"
+              width="1500" height="844" loading="lazy">
+          </div>
         </div>
+
+        <ul class="points">
+          <li class="point">
+            <h3 data-i18n="p1_title">Toutes les toitures</h3>
+            <p data-i18n="p1_text">Plates, inclinées, écologiques, végétales, en tuiles ou en ardoises.</p>
+          </li>
+          <li class="point">
+            <h3 data-i18n="p2_title">Quand c’est urgent</h3>
+            <p data-i18n="p2_text">Un dépannage urgent pour les fuites qui ne peuvent pas attendre.</p>
+          </li>
+          <li class="point">
+            <h3 data-i18n="p3_title">Dans votre langue</h3>
+            <p data-i18n="p3_text">Nous vous répondons en français, en néerlandais ou en anglais.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <h2 class="section__title" id="contact-title" data-i18n="contact_title">Contact</h2>
-
-        <div class="contact__cards">
-          <div class="card">
-            <p class="card__label" data-i18n="label_phone">Téléphone</p>
-            <a class="card__value" href="tel:+32488409068">+32 488 40 90 68</a>
-            <a class="btn btn--small card__action" href="tel:+32488409068" data-i18n="call">Appeler</a>
-          </div>
-
-          <div class="card">
-            <p class="card__label" data-i18n="label_email">E-mail</p>
-            <a class="card__value card__value--mail" href="mailto:proluxsrl@hotmail.com">proluxsrl@hotmail.com</a>
-            <div class="card__action card__action--row">
-              <button class="btn btn--small btn--ghost" type="button" data-copy="proluxsrl@hotmail.com" data-i18n="copy_btn">Copier l'adresse</button>
-              <span class="contact__status" role="status" aria-live="polite"></span>
-            </div>
-          </div>
-
-          <div class="card">
-            <p class="card__label" data-i18n="label_address">Adresse</p>
-            <address class="card__value">
-              Prolux &amp; Co SRL<br>
-              Sportstraat 21<br>
-              1930 Zaventem
-            </address>
-          </div>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+        <div class="contact__main">
+          <h2 id="contact-title" data-i18n="contact_title">Contact</h2>
+          <p class="contact__lead" data-i18n="contact_lead">Parlez-nous de votre toit : appelez ou écrivez-nous.</p>
+          <a class="contact__phone" href="tel:+32488409068">+32 488 40 90 68</a>
         </div>
+
+        <dl class="contact__list">
+          <div>
+            <dt data-i18n="label_email">E-mail</dt>
+            <dd>
+              <a class="contact__mail" href="mailto:proluxsrl@hotmail.com">proluxsrl@hotmail.com</a>
+              <div class="contact__row">
+                <button class="btn btn--outline btn--small" type="button" data-copy="proluxsrl@hotmail.com" data-i18n="copy_btn">Copier l’adresse</button>
+                <span class="contact__status" role="status" aria-live="polite"></span>
+              </div>
+            </dd>
+          </div>
+          <div>
+            <dt data-i18n="label_address">Adresse</dt>
+            <dd>
+              <address>
+                Prolux &amp; Co SRL<br>
+                Sportstraat 21<br>
+                1930 Zaventem
+              </address>
+            </dd>
+          </div>
+        </dl>
       </div>
     </section>
 
