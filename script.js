@@ -11,8 +11,8 @@
 
   var I18N = {
     fr: {
-      title: "Prolux & Co | Travaux de toiture à Zaventem",
-      desc: "Un problème de toiture\u00a0? Prolux & Co, Zaventem\u00a0: dépannage urgent, réparation, démoussage, corniche, zinguerie, rénovation. Plus de 20 ans dans le bâtiment.",
+      title: "Couvreur à Zaventem | Prolux & Co, travaux de toiture",
+      desc: "Couvreur à Zaventem\u00a0: dépannage urgent, réparation, démoussage, corniche, zinguerie et rénovation de toiture. Plus de 20 ans dans le bâtiment.",
       skip: "Aller au contenu",
       brand_aria: "Prolux & Co, accueil",
       nav_aria: "Navigation principale",
