@@ -229,4 +229,74 @@
       }
     });
   }
+
+  /* ==========================================================
+     Cookie choice (Google Analytics consent)
+     The Google tag in <head> starts with everything denied.
+     Nothing is measured until the visitor accepts here.
+     ========================================================== */
+
+  var CONSENT_KEY = 'prolux-consent';
+  var consentBanner = document.querySelector('[data-consent-banner]');
+
+  function storedChoice() {
+    try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
+  }
+
+  // Remove the Google Analytics cookies when a visitor refuses or withdraws.
+  function clearAnalyticsCookies() {
+    var host = location.hostname;
+    var parts = host.split('.');
+    var domains = ['', host, '.' + host];
+    if (parts.length > 2) domains.push('.' + parts.slice(-2).join('.'));
+
+    document.cookie.split(';').forEach(function (entry) {
+      var name = entry.split('=')[0].trim();
+      if (name.indexOf('_ga') !== 0) return;
+      domains.forEach(function (domain) {
+        document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' +
+          (domain ? '; domain=' + domain : '');
+      });
+    });
+  }
+
+  function setChoice(value) {
+    try { localStorage.setItem(CONSENT_KEY, value); } catch (e) {}
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', { analytics_storage: value });
+    }
+    if (value === 'denied') clearAnalyticsCookies();
+    if (consentBanner) consentBanner.hidden = true;
+  }
+
+  if (consentBanner) {
+    if (storedChoice() === null) consentBanner.hidden = false;
+
+    consentBanner.addEventListener('click', function (event) {
+      var button = event.target.closest('[data-consent]');
+      if (button) setChoice(button.dataset.consent);
+    });
+
+    document.querySelectorAll('[data-consent-open]').forEach(function (opener) {
+      opener.addEventListener('click', function () {
+        consentBanner.hidden = false;
+        var first = consentBanner.querySelector('[data-consent]');
+        if (first) first.focus();
+      });
+    });
+  }
+
+  /* ==========================================================
+     Call and email clicks, sent to Google Analytics as events
+     (only measured when the visitor has accepted).
+     ========================================================== */
+
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest && event.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+    if (!link || typeof gtag !== 'function') return;
+    var href = link.getAttribute('href');
+    gtag('event', href.indexOf('tel:') === 0 ? 'phone_click' : 'email_click', {
+      link_url: href
+    });
+  });
 })();

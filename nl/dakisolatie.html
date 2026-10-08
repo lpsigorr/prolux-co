@@ -3,6 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google tag (gtag.js) with Consent Mode: measurement starts only after the visitor accepts -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+    try {
+      if (localStorage.getItem('prolux-consent') === 'granted') {
+        gtag('consent', 'update', { analytics_storage: 'granted' });
+      }
+    } catch (e) {}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KCRSTF44Q"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-8KCRSTF44Q');
+  </script>
+
   <title>Dakisolatie in Zaventem | Prolux &amp; Co</title>
   <meta name="description" content="Dakisolatie langs buiten of langs binnen in Zaventem: Prolux &amp; Co verhoogt het comfort in uw huis en beperkt het warmteverlies.">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -237,8 +260,19 @@
       <p>Sportstraat 21, 1930 Zaventem</p>
       <p><a href="tel:+32488409068">+32 488 40 90 68</a></p>
       <p><a href="mailto:proluxsrl@hotmail.com">proluxsrl@hotmail.com</a></p>
+      <p><button class="footer-link" type="button" data-consent-open>Cookies beheren</button></p>
     </div>
   </footer>
+
+  <div class="consent" data-consent-banner role="region" aria-label="Cookies" hidden>
+    <div class="wrap consent__inner">
+      <p class="consent__text">Deze website gebruikt Google Analytics om het bezoek te meten. Zonder uw toestemming worden er geen meetcookies geplaatst.</p>
+      <div class="consent__actions">
+        <button class="btn btn--line btn--small" type="button" data-consent="denied">Weigeren</button>
+        <button class="btn btn--line btn--small" type="button" data-consent="granted">Accepteren</button>
+      </div>
+    </div>
+  </div>
 
   <script src="/assets/js/main.js"></script>
 </body>
