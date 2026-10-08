@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://proluxtoiture.be/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/"/>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/nl/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/depannage-toiture-urgent-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/depannage-toiture-urgent-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/spoed-dakreparatie-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/depannage-toiture-urgent-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/nl/spoed-dakreparatie-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/depannage-toiture-urgent-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/spoed-dakreparatie-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/depannage-toiture-urgent-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/demoussage-toiture-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/demoussage-toiture-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/dak-ontmossen-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/demoussage-toiture-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/nl/dak-ontmossen-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/demoussage-toiture-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/dak-ontmossen-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/demoussage-toiture-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/reparation-toiture-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/reparation-toiture-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/dakreparatie-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/reparation-toiture-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/nl/dakreparatie-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/reparation-toiture-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/dakreparatie-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/reparation-toiture-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/reparation-corniche-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/reparation-corniche-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/kroonlijst-herstellen-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/reparation-corniche-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/nl/kroonlijst-herstellen-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/reparation-corniche-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/kroonlijst-herstellen-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/reparation-corniche-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/zinguerie-roofing-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/zinguerie-roofing-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/zinkwerk-roofing-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/zinguerie-roofing-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/nl/zinkwerk-roofing-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/zinguerie-roofing-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/zinkwerk-roofing-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/zinguerie-roofing-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/renovation-toiture-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/renovation-toiture-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/dakrenovatie-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/renovation-toiture-zaventem/"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/nl/dakrenovatie-zaventem/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/renovation-toiture-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/dakrenovatie-zaventem/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/renovation-toiture-zaventem/"/>
+    <priority>0.8</priority>
   </url>
 </urlset>

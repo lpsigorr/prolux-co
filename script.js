@@ -3,8 +3,9 @@
 
   /* ==========================================================
      Languages
-     All texts live here. The page is written in French; picking
-     another language swaps the texts in place, no page reload.
+     All texts live here. Each page is written in its own language
+     (French at /, Dutch at /nl/, set by <html lang>). English has no
+     page of its own: its button swaps the texts in place.
      Elements opt in with data-i18n="key" (text) or
      data-i18n-attrs="attribute:key;attribute:key" (alt, aria-label...).
      ========================================================== */
@@ -91,8 +92,8 @@
       lb_close: "Fermer"
     },
     nl: {
-      title: "Prolux & Co | Dakwerken in Zaventem",
-      desc: "Een probleem met uw dak? Prolux & Co, Zaventem: spoeddienst, herstelling, ontmossing, kroonlijst, zinkwerk, renovatie. Meer dan 20 jaar in de bouw.",
+      title: "Dakwerker in Zaventem | Prolux & Co, dakwerken",
+      desc: "Dakwerker in Zaventem: spoeddienst, dakreparatie, dak ontmossen, kroonlijst, zinkwerk en dakrenovatie. Meer dan 20 jaar in de bouw.",
       skip: "Ga naar de inhoud",
       brand_aria: "Prolux & Co, startpagina",
       nav_aria: "Hoofdmenu",
@@ -253,7 +254,8 @@
   };
 
   var STORAGE_KEY = 'prolux-lang';
-  var currentLang = 'fr';
+  var PAGE_LANG = I18N[document.documentElement.lang] ? document.documentElement.lang : 'fr';
+  var currentLang = PAGE_LANG;
 
   function t(key) {
     var dict = I18N[currentLang] || I18N.fr;
@@ -290,6 +292,14 @@
       button.setAttribute('aria-pressed', String(button.dataset.lang === lang));
     });
 
+    document.querySelectorAll('[data-lang-link]').forEach(function (link) {
+      if (link.dataset.langLink === lang) {
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+
     if (remember) {
       try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* storage blocked */ }
     }
@@ -298,6 +308,11 @@
   }
 
   document.addEventListener('click', function (event) {
+    if (event.target.closest('[data-lang-link]')) {
+      /* FR and NL are links to their own page: forget a remembered English choice */
+      try { localStorage.removeItem(STORAGE_KEY); } catch (e) { /* storage blocked */ }
+      return;
+    }
     var button = event.target.closest('[data-lang]');
     if (!button) return;
     applyLanguage(button.dataset.lang, true);
@@ -530,7 +545,7 @@
   }
 
   /* ==========================================================
-     Start: restore the language the visitor picked last time
+     Start: the page's own language, or English if the visitor chose it
      ========================================================== */
 
   document.addEventListener('languagechange', function () {
@@ -541,5 +556,5 @@
 
   var saved = null;
   try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) { /* storage blocked */ }
-  applyLanguage(I18N[saved] ? saved : 'fr', false);
+  applyLanguage(saved === 'en' ? 'en' : PAGE_LANG, false);
 })();
