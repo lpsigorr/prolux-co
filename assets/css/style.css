@@ -1193,6 +1193,26 @@ h4 {
   object-position: var(--pos, 40% 30%);
 }
 
+/* Legal pages (privacy): title band without a photo, quieter headings */
+
+.hero--legal {
+  min-height: 0;
+  padding-bottom: calc(var(--pitch) + 1.5rem);
+}
+
+.hero--legal .hero__text {
+  max-width: 40rem;
+}
+
+.prose--legal h2 {
+  margin-top: 2.25rem;
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+}
+
+.prose--legal h2:first-child {
+  margin-top: 0;
+}
+
 /* Body */
 
 .page-body {

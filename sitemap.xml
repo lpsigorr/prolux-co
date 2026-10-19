@@ -128,4 +128,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/fr/isolation-toiture.html"/>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://proluxtoiture.be/fr/politique-confidentialite.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/fr/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/privacybeleid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/fr/politique-confidentialite.html"/>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://proluxtoiture.be/nl/privacybeleid.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://proluxtoiture.be/fr/politique-confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://proluxtoiture.be/nl/privacybeleid.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://proluxtoiture.be/fr/politique-confidentialite.html"/>
+    <priority>0.3</priority>
+  </url>
 </urlset>
