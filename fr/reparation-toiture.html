@@ -16,7 +16,7 @@
     });
     try {
       if (localStorage.getItem('prolux-consent') === 'granted') {
-        gtag('consent', 'update', { analytics_storage: 'granted' });
+        gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted', ad_user_data: 'granted' });
       }
     } catch (e) {}
   </script>
@@ -258,7 +258,7 @@
 
   <div class="consent" data-consent-banner role="region" aria-label="Cookies" hidden>
     <div class="wrap consent__inner">
-      <p class="consent__text">Ce site utilise Google Analytics pour mesurer sa fréquentation. Aucun cookie de mesure n’est déposé sans votre accord.</p>
+      <p class="consent__text">Ce site utilise Google Analytics et Google Ads pour mesurer sa fréquentation et l’efficacité de nos annonces. Aucun cookie de mesure n’est déposé sans votre accord.</p>
       <div class="consent__actions">
         <button class="btn btn--line btn--small" type="button" data-consent="denied">Refuser</button>
         <button class="btn btn--line btn--small" type="button" data-consent="granted">Accepter</button>

@@ -16,7 +16,7 @@
     });
     try {
       if (localStorage.getItem('prolux-consent') === 'granted') {
-        gtag('consent', 'update', { analytics_storage: 'granted' });
+        gtag('consent', 'update', { analytics_storage: 'granted', ad_storage: 'granted', ad_user_data: 'granted' });
       }
     } catch (e) {}
   </script>
@@ -135,9 +135,10 @@
 
           <h2>4. Google Ads</h2>
           <p>Nous pouvons recevoir des informations que vous choisissez de transmettre via les formulaires de prospects Google Ads afin de vous contacter au sujet de votre demande.</p>
+          <p>Avec votre accord, Google Ads mesure également les clics sur notre numéro de téléphone et notre adresse e-mail, afin d’évaluer l’efficacité de nos annonces. Ces informations ne servent pas à vous identifier personnellement et aucune publicité personnalisée n’est activée.</p>
 
-          <h2>5. Google Analytics et cookies</h2>
-          <p>Notre site utilise Google Analytics afin de mesurer sa fréquentation. Les cookies de mesure ne sont déposés qu’après votre accord.</p>
+          <h2>5. Google Analytics, Google Ads et cookies</h2>
+          <p>Notre site utilise Google Analytics et Google Ads afin de mesurer sa fréquentation et l’efficacité de nos annonces. Les cookies de mesure ne sont déposés qu’après votre accord.</p>
           <p>Vous pouvez refuser les cookies non essentiels ou retirer votre consentement à tout moment via le lien « Gérer les cookies » en bas de chaque page.</p>
 
           <h2>6. Destinataires des données</h2>
@@ -208,7 +209,7 @@
 
   <div class="consent" data-consent-banner role="region" aria-label="Cookies" hidden>
     <div class="wrap consent__inner">
-      <p class="consent__text">Ce site utilise Google Analytics pour mesurer sa fréquentation. Aucun cookie de mesure n’est déposé sans votre accord.</p>
+      <p class="consent__text">Ce site utilise Google Analytics et Google Ads pour mesurer sa fréquentation et l’efficacité de nos annonces. Aucun cookie de mesure n’est déposé sans votre accord.</p>
       <div class="consent__actions">
         <button class="btn btn--line btn--small" type="button" data-consent="denied">Refuser</button>
         <button class="btn btn--line btn--small" type="button" data-consent="granted">Accepter</button>
