@@ -239,7 +239,7 @@
   var CONSENT_KEY = 'prolux-consent';
   // Google Ads conversions (call and email clicks), sent only after the visitor accepts.
   var ADS_EMAIL_CLICK = 'AW-18521526323/-MqdCLC2m6MdELOg4P9E';
-  var ADS_PHONE_CLICK = ''; // add 'AW-18521526323/<label>' to count call clicks
+  var ADS_PHONE_CLICK = 'AW-18521526323/iMieCLrxs6QdELOg4P9E';
   var consentBanner = document.querySelector('[data-consent-banner]');
 
   function storedChoice() {
