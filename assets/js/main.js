@@ -316,4 +316,49 @@
       });
     }
   });
+
+  /* ==========================================================
+     Quote form (sent by e-mail through Web3Forms)
+     ========================================================== */
+
+  var ADS_FORM_SUBMIT = 'AW-18521526323/4P9VCOD9oqodELOg4P9E'; // Google Ads conversion "send_to" for form submits, e.g. 'AW-18521526323/xxxx'
+
+  document.querySelectorAll('[data-quote-form]').forEach(function (form) {
+    var status = form.querySelector('.quote__status');
+    var button = form.querySelector('.quote__submit');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!form.name.value.trim() || !form.phone.value.trim()) {
+        status.textContent = form.dataset.invalid;
+        return;
+      }
+      button.disabled = true;
+      status.textContent = form.dataset.sending;
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      })
+        .then(function (response) { return response.json(); })
+        .then(function (data) {
+          if (!data.success) throw new Error(data.message || 'send failed');
+          form.reset();
+          status.textContent = form.dataset.success;
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', { form_name: 'quote' });
+            if (ADS_FORM_SUBMIT && storedChoice() === 'granted') {
+              gtag('event', 'conversion', { send_to: ADS_FORM_SUBMIT, value: 1.0, currency: 'EUR' });
+            }
+          }
+        })
+        .catch(function () {
+          status.textContent = form.dataset.error;
+        })
+        .finally(function () {
+          button.disabled = false;
+        });
+    });
+  });
 })();

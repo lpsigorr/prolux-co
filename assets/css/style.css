@@ -895,6 +895,107 @@ h4 {
   line-height: 1.4;
 }
 
+/* ---------- Quote form ---------- */
+
+.quote {
+  display: grid;
+  gap: 1rem;
+  max-width: 36rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--indigo);
+}
+
+.quote__title {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.quote__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.quote__field {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.quote__field em {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.quote__field input,
+.quote__field textarea {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border: 2px solid var(--indigo);
+  border-radius: 0;
+  background: #fff;
+  color: var(--indigo);
+  font: inherit;
+  font-weight: 500;
+}
+
+.quote__field textarea {
+  resize: vertical;
+}
+
+.quote__field input:focus,
+.quote__field textarea:focus {
+  outline: 3px solid #fff;
+  outline-offset: 1px;
+}
+
+.quote__submit {
+  justify-self: start;
+  background: var(--indigo);
+  color: #fff;
+}
+
+.quote__submit:hover {
+  border-color: #fff;
+  background: #fff;
+  color: var(--indigo);
+}
+
+.quote__submit[disabled] {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.quote__status {
+  min-height: 1.4em;
+  font-weight: 700;
+}
+
+.quote__note {
+  font-size: 0.85rem;
+}
+
+.quote__note a {
+  text-decoration: underline;
+}
+
+.quote__trap {
+  position: absolute;
+  left: -9999px;
+}
+
+@media (max-width: 40rem) {
+  .quote__row {
+    grid-template-columns: 1fr;
+  }
+
+  .quote__submit {
+    justify-self: stretch;
+  }
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
